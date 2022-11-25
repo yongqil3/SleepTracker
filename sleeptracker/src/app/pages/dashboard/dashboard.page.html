@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title style="color: white;">Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="none">
+    <div class="flex-container">
+      <div style="color: white; margin-bottom: 17px;width:100%;font-size: 50px;">Last Night</div>
+    </div>
+  </ion-item>
+
+  <ion-item lines="none">
+    <div class="flex-container">
+      <div style="color: white; margin-bottom: 30px;width:100%;font-size: 50px;">Summary</div>
+    </div>
+  </ion-item>
+  
+
+  <ion-card style="border-radius: 40px;">
+    <ion-card-header>
+      <ion-card-title>      
+          <div style="color: #202B73; font-weight: bold; font-size: 28px">Overnight Sleep Time</div>      
+      </ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>     
+        <div class="d">
+          <div style="color: #D64B82; font-size: 35px;">{{getRecentSleepHour()}} hours </div>    
+        </div>
+        <div class="e"  ><div>at last night</div></div>
+      <div class="c">
+        <div style="color: black; font-weight: bold;width:100%;">{{getRecentSleepExactlyTime()}}</div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="border-radius: 40px; height:60%;">
+    <ion-card-header>
+      <ion-card-title>
+          <div style="color: #202B73; font-weight: bold; font-size: 30px;">Sleepiness</div>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- <div class="flex-container-card-content"> -->
+      <div style="flex-wrap: nowrap;">
+          <h style="color: black; margin-top: 0%;font-size:25px; font-weight: bold;">Tired degree:</h>
+          
+          <h style="color: black; margin-top: -5%; color: #D64B82; font-size:30px;font-weight: bold;"><br/>level {{getRecentSleepinessValue()}}</h>
+        </div>
+        <!-- <div class="b">
+          <p style="font-size: 18px; color: #202B73; font-weight: bold;">Quality</p>
+          <div style="color: #D64B82; font-weight: bold;">{{getRecentSleepinessQuality()}}</div>
+        </div> -->
+      <!-- </div> -->
+      <!-- <div class="c"> -->
+        <div style="color: black; font-size:25px; font-weight: bold;width:100%; ">Means you feel </div>
+        
+        <div style="color: #D64B82; font-size:45px; font-weight: bold;width:100%;"> {{getRecentSleepinessQuality()}}</div>
+        <div style="color: black; font-weight: bold;width:100%; font-size:25px">Based on the scale </div>
+      <!-- </div> -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

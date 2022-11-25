@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="new-background-color">
+    <ion-title style="color: white;">Sleepiness</ion-title>
+    <ion-button slot="end" shape="round" fill="clear" size="small" (click)="openModal()">
+      <ion-icon name="add" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-item lines="none">
+      <div class="flex-container-col1">
+       
+        <div class="b" style="color: white; font-weight: bold;">Sleepiness level</div>
+      </div>
+    </ion-item>
+
+  <ion-card *ngFor="let sleepiness of sleepinessArray;">
+    <ion-card-header>
+      <ion-card-title>
+          <div style="color: #202B73; font-size:40px; font-weight: bold;">{{sleepiness.dateString()}}</div>
+         
+        <!-- </div> -->
+      </ion-card-title>
+    </ion-card-header>
+  
+
+    <ion-card-content>
+      <div class="flex-container-card-content">
+        <div class="b">
+          <div style="color: #D64B82; font-weight: bold;">level:</div>
+        </div>
+        <div class="a">
+          <div style="color: #D64B82; margin-left: 10px;">{{sleepiness.loggedValue}} {{sleepiness.ratingString()}}</div>
+        </div>
+       
+      </div>
+      </ion-card-content> 
+      <p style="color:black; font-size: 18px; margin-left: 10px; margin-top: -15px; font-style: italic;">"{{sleepiness.summaryString()}}."</p>
+  </ion-card> -->
+
+</ion-content>

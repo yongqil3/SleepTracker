@@ -1,0 +1,128 @@
+ion-content {
+  --background: black;
+
+}
+
+.new-background-color{
+  --background: #171419;
+}
+
+.sleepinessScore, .sleepinessQuality {
+  display: inline;
+}
+
+
+.flex-container-card {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  //background-color: pink;
+}
+
+.flex-container-card > div {
+  width: 160px;
+  margin: 10px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.flex-container-card >ion-card-title{
+  font-size: 40px;
+  margin-bottom: 30px;
+
+}
+.flex-container-card > ion-icon {
+  width: 50px;
+  height: 70px;
+  margin-top: 5px;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 36px;
+}
+
+.flex-container-card-content {
+  height: 100px;
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  // background-color: pink;
+}
+
+.flex-container-card-content > div.a {
+  width: 200px;
+  margin: 5px;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 20px;
+
+}
+
+.flex-container-card-content > div.b {
+  width: 200px;
+  margin-top: 27px;
+  margin-right: 8px;
+  text-align: right;
+  line-height: 25px;
+  font-size: 36px;
+}
+
+.flex-container {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+
+}
+
+.flex-container > div {
+  width: 120px;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 24px;
+}
+
+.flex-container > ion-icon {
+  width: 120px;
+  margin: 15px;
+  padding-top: 5px;
+  padding-left: 50px;
+  line-height: 25px;
+  font-size: 36px;
+  align-items: right;
+}
+
+.flex-container-col1 {
+  flex-direction: column;
+  margin-top: 25px;
+  display: flex;
+  align-content: space-between;
+}
+
+.flex-container-col1 > div.a {
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 0px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 40px;
+}
+
+.flex-container-col1 > div.b {
+  width: 300px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 30px;
+}
+
+ion-item {
+  --background: none;
+}

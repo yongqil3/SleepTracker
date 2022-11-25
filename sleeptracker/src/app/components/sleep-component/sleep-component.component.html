@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title font-size="0px">Time</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <h1 style="color: black;">Please Input Your Sleeping Time</h1>
+  </ion-item>
+ 
+  <!--Bedtime-->
+  <ion-item>
+    <ion-label position="floating" style="color:black; font-weight: bold; font-size: 20px;">Bedtime</ion-label>
+    <ion-datetime display-format="MM.DD.YYYY HH:mm" placeholder="Select Start Date" [(ngModel)]="startDateString" style="color: #D64B82;"></ion-datetime>
+  </ion-item>
+  <!--Wake-up time-->
+  <ion-item>
+    <ion-label position="floating" style="color: black; font-weight: bold; font-size: 20px;">Wake-up time</ion-label>
+    <ion-datetime display-format="MM.DD.YYYY HH:mm" placeholder="Select End Date" [(ngModel)]="endDateString" style="color: #D64B82;"></ion-datetime>
+  </ion-item>
+  <!--Button-->
+  <ion-button expand="block" (click)="submitClicked()">Submit</ion-button>
+</ion-content>

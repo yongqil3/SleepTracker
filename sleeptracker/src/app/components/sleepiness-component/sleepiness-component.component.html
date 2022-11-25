@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Sleepiness Level</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <h1 style="color: #202B73;">Drag The Slipper To Show Your Feeling</h1>
+  </ion-item>
+  <!-- <ion-item>
+    <h1 style="color:black;">From 1-7</h1>
+  </ion-item> -->
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 1: 
+      <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">
+      Active</p>
+    </h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 2: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">Active</p></h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 3: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">Awake</p></h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 4: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">Awake</p></h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 5: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">Awake</p></h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 6: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">sleepy</p></h1>
+  </ion-item>
+  <ion-item>   
+    <h1 style="color:black; margin-top: 2px">Level 7: <p style="color:pink; font-size:20px; margin-top: -5px;margin-bottom:-1px;">sleepy</p></h1>
+  </ion-item>
+  <ion-range min="1" max="7" step="1" snaps="true" pin="true" color="danger" [(ngModel)]="level">
+    <p slot="start">1</p>
+    <p slot="end">7</p>
+  </ion-range>
+</ion-content>
+<ion-item>
+   
+  <ion-button expand="block" (click)="submitClicked()">Submit</ion-button>
+</ion-item>
+
+

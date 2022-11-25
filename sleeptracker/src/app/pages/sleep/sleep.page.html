@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="new-background-color">
+    <ion-title style="color: white;">Overnight Sleep</ion-title>
+    <ion-button slot="end" shape="round" fill="clear" size="small" (click)="openModal()">
+      <ion-icon name="add" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="none">
+    <div class="flex-container-col1">
+      <div class="b" style="color: white; font-weight: bold;">Overnight Sleep</div>
+    </div>
+  </ion-item>
+  <ion-card *ngFor="let sleep of sleepArray" style="border-radius: 40px;">
+    <ion-card-header>
+      <ion-card-title>
+        <div class="flex-container-card">
+          <div style="color:  green;font-size: 20px;position:sticky;">{{sleep.dateString()}}</div>
+          <p style="color:pink; font-size: 20px; margin-left: 5px; margin-top: -2px;">Time Frame: {{sleep.timeString()}}</p >
+        </div>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="flex-container-card-content">
+          <p style=" font-size: 35px;margin-left: 5px; margin-top: -2px; color: #202B73; font-weight: bold;">Total: {{sleep.summaryString()}} hours</p >
+        <!-- <div><p style="font-size: 20px">Quality</p >hours</div> -->
+      </div>
+    </ion-card-content>
+
+  </ion-card>
+
+
+  
+
+</ion-content>
