@@ -1,4 +1,4 @@
---Readme document for yongqi,liang，yongqil3@uci.edu，75181206，mingyi,wang, mingyiw5@uci.edu,88927728*--
+--Readme document for *--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
